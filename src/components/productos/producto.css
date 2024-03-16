@@ -1,0 +1,31 @@
+.producto {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 1%;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0);
+  background-color: white;
+  flex-basis: calc(5% - 10px); 
+}
+.producto img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+}
+.precio {
+    margin-bottom: 20px;
+  }  
+.controles {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }  
+.agregar {
+    cursor: pointer;
+  }
+  

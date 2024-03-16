@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, #f2f2f2, #ffffff);
+    padding: 40px 0;
+    color: #333;
+     width: 168%;
+  }
+    
+  .footer-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }

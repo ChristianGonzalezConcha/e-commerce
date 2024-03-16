@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 98%;
+    background: linear-gradient(to right, #bdc3c7, #2c3e50); 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+  }
+  
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+  
+  .title {
+    flex-grow: 1;
+    text-align: center;
+    color: white; 
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  button {
+    background-color: #ecf0f1;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #bdc3c7;
+  }
+  
