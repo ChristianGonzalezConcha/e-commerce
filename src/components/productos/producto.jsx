@@ -18,6 +18,7 @@ const detallesGemas = {
 function Producto({ data }) {
   const [cantidad, setCantidad] = useState(0);
   const [verDetalle, setVerDetalle] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const aumentarCantidad = () => {
     setCantidad(cantidad + 1);
@@ -33,8 +34,15 @@ function Producto({ data }) {
 
   return (
     <div className="producto">
-      <h3>{data.nombre}</h3> 
-      <img src={data.imageUrl} alt={data.nombre} onClick={toggleDetalle} /> 
+      <h3>{data.nombre}</h3>
+      <div 
+        className="image-container" 
+        onMouseEnter={() => setIsHovered(true)} 
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <img src={data.imageUrl} alt={data.nombre} onClick={toggleDetalle} />
+        {isHovered && <div className="overlay">Más detalles</div>}
+      </div>
       {verDetalle && (
         <div className="detalle">
           {detallesGemas[data.nombre.toLowerCase().replace(/\s+/g, '')] || "Detalle no disponible."}
